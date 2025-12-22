@@ -123,7 +123,7 @@ const App = () => {
       <section id="contact" className="py-24 px-8">
         <div className="max-w-4xl mx-auto bg-slate-900 border border-white/10 rounded-3xl p-12 relative overflow-hidden">
           <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/20 blur-3xl rounded-full"></div>
-          <h2 className="text-3xl font-black mb-8 uppercase tracking-widest">Contact Team HQ</h2>
+          <h2 className="text-3xl font-black mb-8 uppercase tracking-widest">Contact Team </h2>
           <form onSubmit={handleContact} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input name="name" placeholder="YOUR NAME" className="bg-slate-800 border-none rounded-xl p-4 focus:ring-2 focus:ring-rose-500 outline-none" required />
             <input name="email" type="email" placeholder="YOUR EMAIL" className="bg-slate-800 border-none rounded-xl p-4 focus:ring-2 focus:ring-rose-500 outline-none" required />
@@ -161,7 +161,7 @@ const App = () => {
                 <i className="fas fa-brain text-white"></i>
               </div>
               <div>
-                <p className="font-bold text-sm text-white">Red Baron Intelligence</p>
+                <p className="font-bold text-sm text-white">TEAM Red Baron Intelligence</p>
                 <div className="flex items-center gap-1.5">
                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                    <span className="text-[10px] text-white/80 uppercase font-black tracking-tighter">Gemini Pro 2.5 Active</span>
