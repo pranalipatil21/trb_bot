@@ -1,75 +1,177 @@
-# React + TypeScript + Vite
+🚗 Team Red Baron – AI Intelligence Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered web application developed for Team Red Baron to demonstrate Artificial Intelligence integration in business strategy, post-sales customer support, and risk assessment for All-Terrain Vehicles (ATVs).
 
-Currently, two official plugins are available:
+This project showcases how AI can be practically embedded into a company’s operations to improve decision-making, customer experience, and strategic planning.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📌 Project Objectives
 
-## React Compiler
+Demonstrate AI-assisted business decision-making
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+Improve post-sales customer support using an AI chatbot
 
-Note: This will impact Vite dev & build performances.
+Use AI to analyze risks related to supply chain, logistics, and market disruptions
 
-## Expanding the ESLint configuration
+Present a clear AI integration strategy, not just AI technology
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🧠 AI Scenarios Implemented
+1️⃣ AI-Based Customer Support Chatbot (Post-Sales)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Purpose:
+Provide 24/7 intelligent post-sales support for ATV customers.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Features:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Maintenance guidance
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Troubleshooting assistance
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Warranty-related queries
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Technical explanations for ATV components
+
+Easy accessibility via a floating chatbot UI
+
+AI Role:
+The chatbot acts as a Post-Sales AI Assistant trained to respond with technical, helpful, and precise answers relevant to ATVs.
+
+2️⃣ AI-Assisted Risk Assessment & Mitigation Strategy
+
+Purpose:
+Support strategic decision-making by identifying potential business risks.
+
+AI Capabilities:
+
+Analyzes industry trends, logistics challenges, and supply chain risks
+
+Predicts potential disruptions
+
+Generates insights to assist human decision-making
+
+Human Role (Important):
+
+AI provides insights and predictions
+
+The team proposes practical mitigation strategies
+
+Ensures AI output is used responsibly and effectively
+
+🏗️ Technology Stack
+Category	Technology
+Frontend	React + TypeScript
+Build Tool	Vite
+Styling	Tailwind CSS
+AI Model	Google Gemini (via @google/genai)
+Deployment	Vercel
+Version Control	Git & GitHub
+📂 Project Structure
+trb_bot/
+│
+├── public/
+│   ├── logo.png
+│   ├── trb25.mp4
+│
+├── src/
+│   ├── main.tsx
+│   ├── index.css
+│
+├── .gitignore
+├── .env.example
+├── package.json
+├── vite.config.ts
+├── README.md
+
+🔐 Environment Variables
+
+This project uses environment variables for security.
+
+.env (NOT committed to GitHub)
+VITE_GEMINI_API_KEY=your_api_key_here
+
+.env.example (Safe to commit)
+VITE_GEMINI_API_KEY=your_api_key_here
+
+
+⚠️ Important:
+.env files are ignored using .gitignore to prevent API key exposure.
+
+🚀 Local Setup Instructions
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/trb_bot.git
+cd trb_bot
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Add Environment Variables
+
+Create a .env file in the root directory:
+
+VITE_GEMINI_API_KEY=your_api_key_here
+
+4️⃣ Run the Development Server
+npm run dev
+
+
+The app will run at:
+
+http://localhost:5173
+
+🌐 Deployment (Vercel)
+
+Push code to GitHub
+
+Import repository into Vercel
+
+Add environment variable in Vercel:
+
+VITE_GEMINI_API_KEY
+
+Deploy 🚀
+
+Any future changes pushed to main branch will auto-deploy.
+
+🔄 Updating the Deployed Website
+
+To make changes after deployment:
+
+git add .
+git commit -m "Describe your changes"
+git push origin main
+
+
+Vercel will automatically redeploy the updated version.
+
+🧪 Example Queries for Evaluation
+Customer Support Bot
+
+“How often should ATV suspension be serviced?”
+
+“Troubleshoot overheating issues in an electric ATV”
+
+“Explain warranty coverage for drivetrain components”
+
+Risk Assessment Bot
+
+“Analyze supply chain risks for motorsports components”
+
+“What are the logistics risks during monsoon season?”
+
+“Suggest mitigation strategies for lithium battery shortages”
+
+🏆 Key Evaluation Highlights
+
+AI is purpose-driven, not generic
+
+Human decision-making is enhanced, not replaced
+
+Strong alignment with business objectives
+
+Secure handling of sensitive information
+
+Scalable and real-world applicable AI model
+
+👥 Team
+
+Team Red Baron
+Inspired to Build, Determined to Win.
