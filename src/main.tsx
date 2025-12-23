@@ -38,8 +38,8 @@ const App = () => {
 
     try {
       const systemInstruction = activeTab === 'support'
-        ? "You are the Team Red Baron Post-Sales AI Assistant. Provide maintenance, troubleshooting, and warranty advice for custom ATVs. Be technical, helpful, and precise."
-        : "You are the Team Red Baron Risk Analyst. Analyze market trends, supply chain logistics, and environmental regulations for motorsports. Predict risks and suggest mitigation strategies.";
+        ? "You are the Red Baron motocorp Post-Sales AI Assistant. Provide maintenance, troubleshooting, and warranty advice for custom ATVs. Be technical, helpful, and precise."
+        : "You are the Red Baron motocorp Risk Analyst. Analyze market trends, supply chain logistics, and environmental regulations for motorsports. Predict risks and suggest mitigation strategies.";
 
       const response = await ai.models.generateContent({
         model: 'gemini-3-flash-preview',
@@ -62,7 +62,7 @@ const App = () => {
     const msg = fd.get('message');
     const email = fd.get('email');
     
-    const subject = `Inquiry from ${name} via Team Red Baron Website`;
+    const subject = `Inquiry from ${name} via Red Baron motocorp Website`;
     const body = `From: ${name} (${email})\n\nMessage:\n${msg}`;
     
     // Fixed: Opens the user's default email app with your email address
@@ -79,7 +79,7 @@ const App = () => {
       <nav className="fixed top-0 w-full z-50 glass-nav py-4 px-8 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <img src="/logo.png" alt="Logo" className="h-10 w-auto" />
-          <span className="brand-font text-xl font-black tracking-widest text-white">TEAM RED BARON</span>
+          <span className="brand-font text-xl font-black tracking-widest text-white"> RED BARON motocorp</span>
         </div>
         <div className="hidden lg:flex gap-8 text-xs font-bold uppercase tracking-widest">
           {['Home', 'About Us', 'Team', 'Sponsors', 'Gallery', 'Journey'].map(item => (
@@ -91,7 +91,7 @@ const App = () => {
 
       {/* Hero */}
       <section id="home" className="relative h-screen flex flex-col justify-center items-center text-center px-4 hero-gradient">
-        <h1 className="text-6xl md:text-8xl font-black mb-4 animate-pulse">TEAM RED BARON</h1>
+        <h1 className="text-6xl md:text-8xl font-black mb-4 animate-pulse">RED BARON motocorp</h1>
         <h2 className="text-xl md:text-2xl font-light tracking-[0.5em] text-rose-500 mb-8 uppercase">Inspired To Build, Determined To Win.</h2>
         <p className="max-w-2xl text-slate-400 text-lg">
           Pushing the boundaries of motorsports through engineering excellence and strategic AI integration.
@@ -142,7 +142,7 @@ const App = () => {
           <a href="#"><i className="fab fa-instagram hover:text-white transition"></i></a>
           <a href="#"><i className="fab fa-youtube hover:text-white transition"></i></a>
         </div>
-        <p className="text-xs uppercase tracking-widest font-bold">©2025 TEAM RED BARON | DETERMINED TO WIN</p>
+        <p className="text-xs uppercase tracking-widest font-bold">©2025 RED BARON motocorp | DETERMINED TO WIN</p>
       </footer>
 
       {/* Floating Chatbot UI */}
@@ -161,7 +161,7 @@ const App = () => {
                 <i className="fas fa-brain text-white"></i>
               </div>
               <div>
-                <p className="font-bold text-sm text-white">TEAM Red Baron Intelligence</p>
+                <p className="font-bold text-sm text-white"> Red Baron motocorp Intelligence</p>
                 <div className="flex items-center gap-1.5">
                    <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                    <span className="text-[10px] text-white/80 uppercase font-black tracking-tighter">Gemini Pro 2.5 Active</span>
